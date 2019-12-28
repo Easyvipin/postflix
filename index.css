@@ -1,0 +1,138 @@
+body {
+  background-color: black;
+}
+/* loader */
+.no-js #loader {
+  display: none;
+}
+.js #loader {
+  display: block;
+  position: absolute;
+  left: 100px;
+  top: 0;
+}
+.se-pre-con {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: url("ajax-loading.gif") center no-repeat rgb(199, 197, 197);
+  background-size: 20% 20%;
+}
+/* containers */
+.container-fluid {
+  margin-top: 2%;
+}
+
+#input_search {
+  background-color: black;
+  color: white;
+}
+#poster {
+  background-color: black;
+}
+#castimage {
+  width: 100px;
+  height: 100px;
+}
+#casts {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-self: flex-start;
+}
+#castprofile {
+  border-radius: 5%;
+  width: 150px;
+  height: 200px;
+}
+#name {
+  margin-top: 6%;
+  color: white !important;
+}
+#listimages {
+  background-color: rgb(48, 47, 47, 0.4);
+}
+/* overview */
+#overview {
+  background-color: rgba(31, 30, 30, 0.8);
+  color: white;
+}
+/* story */
+
+.jumbotron {
+  color: rgb(255, 255, 255);
+  background-color: rgba(19, 17, 17, 0.8);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+#movie_search {
+  width: 60%;
+}
+@media only screen and (max-width: 600px) {
+  #trending {
+    padding-top: 6%;
+  }
+  .navbar-brand {
+    color: white !important;
+    font-size: 30px;
+  }
+}
+@media only screen and (min-width: 600px) {
+  #trending {
+    padding: 2%;
+  }
+  #t {
+    border: 2px solid rgb(11, 127, 173);
+    border-radius: 3%;
+    width: 75%;
+    height: 75%;
+  }
+  #t1 {
+    width: 100%;
+    height: 100%;
+  }
+  .d-block {
+    width: 100%;
+    height: 100%;
+  }
+  .navbar-brand {
+    color: white !important;
+    font-size: 50px;
+  }
+}
+.navbar {
+  background-color: rgb(2, 1, 1) !important;
+}
+/* buttons */
+#latest {
+  width: 300px;
+  border: none !important;
+}
+/* poster download and cast collapase button hover */
+
+#Mainposter {
+  opacity: 1;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+.middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.moviedetails:hover #Mainposter {
+  opacity: 0.3;
+}
+
+.moviedetails:hover .middle {
+  opacity: 1;
+}

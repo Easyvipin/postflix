@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@16/umd/react.development.js"
+    ></script>
+
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
+    ></script>
+    <!--  api_key=6073902dd4d99a05106002912d0f688a -->
+    <script
+      src="https://kit.fontawesome.com/8d694f53ee.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="index.css" />
+    <script src="Navigation.js" type="text/babel"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+    <script src="index.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="se-pre-con"></div>
+    <div id="root"></div>
+    <div class="container-fluid" id="trendingArea">
+      <div class="row">
+        <div class="col-sm-4 col-md-4">
+          <center>
+            <div id="trending" class="carousel slide" data-ride="carousel">
+              <button
+                type="button"
+                id="latest"
+                class="btn btn-primary btn-lg btn-block"
+              >
+                Coming soon
+              </button>
+              <div class="carousel-inner" id="t">
+                <div class="carousel-item active" id="t1">
+                  <img
+                    class="d-block w-100 img-fluid"
+                    id="trendingposter0"
+                    src="..."
+                    alt="First slide"
+                  />
+                </div>
+                <div class="carousel-item " id="t1">
+                  <img
+                    class=" d-block w-100 img-fluid"
+                    id="trendingposter1"
+                    src="..."
+                    alt="Second slide"
+                  />
+                </div>
+                <div class="carousel-item " id="t1">
+                  <img
+                    class=" d-block w-100 img-fluid"
+                    id="trendingposter2"
+                    src="..."
+                    alt="Third slide"
+                  />
+                </div>
+                <div class="carousel-item " id="t1">
+                  <img
+                    class=" d-block w-100 img-fluid"
+                    id="trendingposter3"
+                    src="..."
+                    alt="Third slide"
+                  />
+                </div>
+                <div class="carousel-item " id="t1">
+                  <img
+                    class=" d-block w-100 img-fluid"
+                    id="trendingposter4"
+                    src="..."
+                    alt="Third slide"
+                  />
+                </div>
+              </div>
+            </div>
+          </center>
+        </div>
+        <div class="col-sm-4 col-md-4">
+          <center>
+            <div id="trending" class="carousel slide" data-ride="carousel">
+              <button
+                type="button"
+                id="latest"
+                class="btn btn-primary btn-lg btn-block"
+              >
+                Trending Shows
+              </button>
+              <div class="carousel-inner" id="t">
+                <div class="carousel-item active" id="t1">
+                  <img
+                    class="d-block w-100 img-fluid"
+                    id="trendingtv0"
+                    src="..."
+                    alt="First slide"
+                  />
+                </div>
+                <div class="carousel-item " id="t1">
+                  <img
+                    class=" d-block w-100 img-fluid"
+                    id="trendingtv1"
+                    src="..."
+                    alt="Second slide"
+                  />
+                </div>
+                <div class="carousel-item " id="t1">
+                  <img
+                    class=" d-block w-100 img-fluid"
+                    id="trendingtv2"
+                    src="..."
+                    alt="Third slide"
+                  />
+                </div>
+                <div class="carousel-item " id="t1">
+                  <img
+                    class=" d-block w-100 img-fluid"
+                    id="trendingtv3"
+                    src="..."
+                    alt="Third slide"
+                  />
+                </div>
+                <div class="carousel-item " id="t1">
+                  <img
+                    class=" d-block w-100 img-fluid"
+                    id="trendingtv4"
+                    src="..."
+                    alt="Third slide"
+                  />
+                </div>
+              </div>
+            </div>
+          </center>
+        </div>
+        <div class="col-sm-4 col-md-4">
+          <center>
+            <div id="trending" class="carousel slide" data-ride="carousel">
+              <button
+                type="button"
+                id="latest"
+                class="btn btn-primary btn-lg btn-block"
+              >
+                Top-Rated
+              </button>
+              <div class="carousel-inner" id="t">
+                <div class="carousel-item active" id="t1">
+                  <img
+                    class="d-block w-100 img-fluid"
+                    id="top0"
+                    src="..."
+                    alt="First slide"
+                  />
+                </div>
+                <div class="carousel-item " id="t1">
+                  <img
+                    class=" d-block w-100 img-fluid"
+                    id="top1"
+                    src="..."
+                    alt="Second slide"
+                  />
+                </div>
+                <div class="carousel-item " id="t1">
+                  <img
+                    class=" d-block w-100 img-fluid"
+                    id="top2"
+                    src="..."
+                    alt="Third slide"
+                  />
+                </div>
+                <div class="carousel-item " id="t1">
+                  <img
+                    class=" d-block w-100 img-fluid"
+                    id="top3"
+                    src="..."
+                    alt="Third slide"
+                  />
+                </div>
+                <div class="carousel-item " id="t1">
+                  <img
+                    class=" d-block w-100 img-fluid"
+                    id="top4"
+                    src="..."
+                    alt="Third slide"
+                  />
+                </div>
+              </div>
+            </div>
+          </center>
+        </div>
+      </div>
+    </div>
+
+    <div className="jumbotron text-center" style="margin-bottom:0">
+      <p>Footer</p>
+    </div>
+
+    <script type="text/babel">
+      class App extends React.Component {
+        state = {
+          loading: true,
+          result_url: "",
+          vote: "",
+          name: "",
+          details: "",
+          overview: {
+            status: false,
+            content: "",
+            backpath: "",
+            release: ""
+          },
+          credit: false
+        };
+        download = () => {
+          document.getElementById("downloadtag").click();
+        };
+        searchposter = e => {
+          e.preventDefault();
+          let movie = document.getElementById("movie_search").value;
+          console.log(movie);
+          axios
+            .get(
+              `https://api.themoviedb.org/3/search/movie?api_key=6073902dd4d99a05106002912d0f688a&language=en-US&page=1&include_adult=false&query=${movie}`
+            )
+            .then(resp => {
+              console.log(resp);
+              let resPoster = `https://image.tmdb.org/t/p/w500${resp.data.results[0].poster_path}`;
+              let backpath = `https://image.tmdb.org/t/p/w500/${resp.data.results[0].backdrop_path}`;
+              let movieId = resp.data.results[0].id;
+              this.setState({
+                loading: false,
+                result_url: resPoster,
+                vote: resp.data.results[0].vote_average,
+                name: resp.data.results[0].title,
+                overview: {
+                  status: true,
+                  content: resp.data.results[0].overview,
+                  backpath: backpath,
+                  release: resp.data.results[0].release_date
+                }
+              });
+              return movieId;
+            })
+            .then(movieId => {
+              axios
+                .get(
+                  `https://api.themoviedb.org/3/movie/${movieId}/credits?api_key=6073902dd4d99a05106002912d0f688a`
+                )
+                .then(creditResp => {
+                  console.log(creditResp);
+                  this.setState({
+                    credit: true
+                  });
+                  let imageSpace = document.getElementById("casts");
+                  if (imageSpace.hasChildNodes() === true) {
+                    imageSpace.innerHTML = "";
+                  }
+
+                  creditResp.data.cast.forEach((item, index) => {
+                    if (index < 5) {
+                      let castImage = ` <figure className="figure" key=${index}>
+        <img src="https://image.tmdb.org/t/p/w500/${item.profile_path}" id ="castprofile" className="img-fluid" alt="${item.name}">
+        <figcaption className="figure-caption" id="name">${item.name}</figcaption>
+      </figure>`;
+                      imageSpace.innerHTML += castImage;
+                    }
+                  });
+                });
+            })
+            .catch(error => {
+              alert("OOP'S we don't have a Poster");
+            });
+        };
+        render() {
+          return (
+            <div>
+              <div id="Header"></div>
+              <div
+                className="jumbotron text-center"
+                style={{ marginBottom: "0" }}
+              >
+                <h1 id="movieQuote"></h1>
+                <p id="quote"></p>
+              </div>
+              <center>
+                <div className="container-fluid">
+                  <div className="row">
+                    <div className="col-sm-6 col-md-6">
+                      <div className="jumbotron" id="input_search">
+                        <form onSubmit={this.searchposter}>
+                          <legend>PosterFlix.Com</legend>
+                          <div className="form-group">
+                            <label for="">YOUR MOVIE?</label>
+                            <input
+                              type="text"
+                              className="form-control"
+                              id="movie_search"
+                              placeholder="Movie name"
+                              required="required"
+                            />
+                          </div>
+
+                          <button type="submit" className="btn btn-primary">
+                            <i className="fa fa-search" />
+                          </button>
+                        </form>
+                      </div>
+                      {this.state.overview.status === false ? (
+                        ``
+                      ) : (
+                        <div
+                          className="container-fluid"
+                          style={{
+                            backgroundImage: `url(${this.state.overview.backpath})`,
+                            backgroundSize: "100% 100%",
+                            paddingTop: "10px",
+                            paddingBottom: "10px"
+                          }}
+                        >
+                          <div className="jumbotron" id="story">
+                            <p>{this.state.overview.content}</p>
+
+                            <h5 style={{ color: "white" }}>
+                              {this.state.name}
+                            </h5>
+                            <div className="rating">
+                              <h5 style={{ color: "black", fontSize: "40px" }}>
+                                <span className="badge badge-warning">
+                                  {" "}
+                                  <i className="fab fa-imdb"></i>{" "}
+                                  {this.state.vote}{" "}
+                                </span>
+                              </h5>
+                              <h5>
+                                {" "}
+                                <span
+                                  style={{
+                                    background: "#e52d27",
+                                    background:
+                                      "-webkit-linear-gradient(to right, #b31217, #e52d27)",
+                                    background:
+                                      "linear-gradient(to right, #b31217, #e52d27)",
+                                    color: "black",
+                                    fontSize: "20px"
+                                  }}
+                                  className="badge badge-danger"
+                                >
+                                  {" "}
+                                  <i className="fab fa-youtube"></i>
+                                </span>
+                              </h5>
+                            </div>
+                          </div>
+                        </div>
+                      )}
+                    </div>
+                    <div
+                      className="col-sm-6 col-md-6"
+                      style={{
+                        paddingTop: "10px",
+                        paddingBottom: "10px"
+                      }}
+                    >
+                      <div id="Result">
+                        {this.state.loading === true ? (
+                          <img
+                            src="loading.gif"
+                            className="img-fluid"
+                            alt="Responsive image"
+                          />
+                        ) : (
+                          <div className="moviedetails">
+                            <img
+                              className="img-fluid"
+                              id="Mainposter"
+                              src={this.state.result_url}
+                              alt={name}
+                            ></img>
+                            <div className="middle">
+                              <a
+                                className="btn btn-warning btn-md"
+                                data-toggle="collapse"
+                                href="#list"
+                                role="button"
+                                aria-expanded="false"
+                                aria-controls="list"
+                              >
+                                <h6 style={{ color: "black" }}>Cast</h6>
+                              </a>{" "}
+                              <br />
+                              <br />
+                              <a
+                                id="downloadtag"
+                                href={this.state.result_url}
+                              ></a>
+                              <button
+                                type="button"
+                                onClick={this.download}
+                                id="download"
+                                class="btn btn-warning"
+                              >
+                                DOWNLOAD
+                              </button>
+                            </div>
+                          </div>
+                        )}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                {this.state.overview.status === false ? (
+                  ""
+                ) : (
+                  <div className="container-fluid">
+                    <div className="collapse" id="list">
+                      <div className="jumbotron" id="listimages">
+                        <div className="row">
+                          <div className="col-sm-12 col-md-12" id="casts"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                )}
+              </center>
+            </div>
+          );
+        }
+      }
+      ReactDOM.render(<App />, document.getElementById("root"));
+    </script>
+    <script src="Navigation.js" type="text/babel"></script>
+  </body>
+</html>
